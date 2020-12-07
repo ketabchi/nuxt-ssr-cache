@@ -6,7 +6,7 @@
   "scripts": {
     "build": "babel src --out-dir lib",
     "test": "yarn mocha -r chai/register-expect tests",
-    "postinstall": "yarn build",
+    "prepublish": "yarn build",
     "prepare": "yarn build"
   },
   "repository": {
