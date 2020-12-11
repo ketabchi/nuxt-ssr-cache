@@ -44,7 +44,7 @@ module.exports = function cacheRenderer(nuxt, config) {
   function isCacheFriendly(path, context) {
     if (typeof config.cache.isCacheable === 'function') {
       if (!config.cache.isCacheable(path, context)) {
-        return false;;
+        return false;
       }
     }
 
